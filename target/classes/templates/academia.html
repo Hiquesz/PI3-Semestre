@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Academia</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="|Academia, ${name}!|" /
+
+	<h1>Form</h1>
+	<form action="#" th:action="@{/academia}" th:object="${academia}" method="post">
+		<p>Nome: <input type="text" th:field="*{nome}"/></p>
+		<p>Endereço: <input type="text" th:field="*{endereco}"/></p>
+		<p><input type="submit" value="Enviar"/> <input type="reset" value="Resetar"/></p>
+	</form>
+</body>
+</html>
