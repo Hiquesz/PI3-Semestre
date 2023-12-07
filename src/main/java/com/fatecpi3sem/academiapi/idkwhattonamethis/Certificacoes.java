@@ -1,10 +1,16 @@
 package com.fatecpi3sem.academiapi.idkwhattonamethis;
 
-public class Certificacoes extends ClassDescBuilder {
+public class Certificacoes { //extends ClassDescBuilder {
   private int DataAquis;
 
-  Certificacoes(String nome, String desc, int data){
-    super(nome, desc);
-    DataAquis = data;
+  public int getDataAquis(){
+	  return DataAquis;
   }
+  public void setDataAquis(int data) {
+	  this.DataAquis = data;
+  }
+//  Certificacoes(String nome, String desc, int data){
+//   super(nome, desc);
+//   DataAquis = data;
+//  }
 }

@@ -1,33 +1,51 @@
 package com.fatecpi3sem.academiapi.aluno;
 
 import java.util.List;
+
+import org.springframework.stereotype.Component;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import com.fatecpi3sem.academiapi.idkwhattonamethis.Pessoa;
-import com.fatecpi3sem.academiapi.exercicio.Exercicio;
+//import com.fatecpi3sem.academiapi.exercicio.Exercicio;
 
+@Component
+@Entity
 public class Aluno extends Pessoa{
+	 @Id
+	 @GeneratedValue(strategy=GenerationType.AUTO)  
+	private Integer id;
 
-  private String Plano;
+	  public Integer getId() {
+	    return id;
+	  }
 
-  private List<Exercicio> Treino;
+	  public void setId(Integer id) {
+	    this.id = id;
+	  }
+	  
+  private String plano;
+  private String treino;
 
   public String getPlano() {
-    return Plano;
+    return plano;
   }
 
   public void setPlano(String plano) {
-    plano = Plano;
+    this.plano = plano;
   }
 
-  public List<Exercicio> getTreino() {
-    return Treino;
+  public String getTreino() {
+    return treino;
   }
 
-  public void setTreino(List<Exercicio> treino) {
-    treino = Treino;
+  public void setTreino(String treino) {
+    this.treino = treino;
   }
 
-  Aluno(String nome, String cpf, String plano) {
-    super(nome, cpf);
-    Plano = plano;
-  }
+  //Aluno(String nome, String cpf, String plano) {
+  //  super(nome, cpf);
+  //  Plano = plano;
+  //}
 }

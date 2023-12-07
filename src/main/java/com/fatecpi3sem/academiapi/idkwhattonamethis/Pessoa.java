@@ -2,28 +2,28 @@ package com.fatecpi3sem.academiapi.idkwhattonamethis;
 
 public abstract class Pessoa{
 
-  private String Nome;
+  private String nome;
 
-  private String CPF;
+  private String cpf;
 
-  public Pessoa(String nome2, String cpf2) {
+  //public Pessoa(String nome2, String cpf2) {
 	// TODO Auto-generated constructor stub
-}
+  //}
 
 public String getNome() {
-    return Nome;
+    return nome;
   }
 
   public void setNome(String nome) {
-    Nome = nome;
+    this.nome = nome;
   }
 
-  public String getCPF() {
-    return CPF;
+  public String getCpf() {
+    return cpf;
   }
 
-  public void setCPF(String cpf) {
-    CPF = cpf;
+  public void setCpf(String cpf) {
+	  this.cpf = cpf;
   }
 
 }

@@ -1,13 +1,27 @@
 package com.fatecpi3sem.academiapi.equipamento;
 import java.util.List;
-import com.fatecpi3sem.academiapi.idkwhattonamethis.ClassDescBuilder;
 
-public class Equipamento extends ClassDescBuilder{
+public class Equipamento { //extends ClassDescBuilder{
+	private String Nome;
+	private String Descricao;
 
+	
   private String Musculo;
 
-  Equipamento(String nome, String desc, String musc) {
-    super(nome, desc);
-    Musculo = musc;
-  }
+  public String getNome() {
+	    return Nome;
+	  }
+
+	  public void setNome(String nome) {
+	    this.Nome = nome;
+	  }
+
+	  public String getDesc() {
+	    return Descricao;
+	  }
+
+	  public void setDesc(String desc) {
+	    this.Descricao = desc;
+	  }
+
 }

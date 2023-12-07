@@ -7,34 +7,34 @@ import com.fatecpi3sem.academiapi.idkwhattonamethis.Pessoa;
 
 public class Personal extends Pessoa{
 
-  public List<Certificacoes> Certificacaos;
-  public Academia Academie;
+  public List<Certificacoes> certificacaos;
+  public Academia academie;
 
   public void addCerts(Certificacoes cert){
-    Certificacaos.add(cert);
+    certificacaos.add(cert);
   }
   public void removeCerts(Certificacoes cert){
     //int value = indexOf(Certificacaos.cert);
-    Certificacaos.remove(cert);
+    certificacaos.remove(cert);
   }
 
   public Academia getAcad(){
-    return Academie;
+    return academie;
   }
   public void setAcad(Academia acad){
-    Academie = acad;
+    academie = acad;
   }
 
   public List<Certificacoes> getCerts() {
-    return Certificacaos;
+    return certificacaos;
   }
   public Academia getAcads() {
-    return Academie;
+    return academie;
   }
 
-  Personal(String nome, String cpf, List<Certificacoes> certs, Academia acad){
-    super(nome, cpf);
-    Academie = acad;
-    Certificacaos = certs;
-  }
+  //Personal(String nome, String cpf, List<Certificacoes> certs, Academia acad){
+  //  super(nome, cpf);
+  //  Academie = acad;
+  //  Certificacaos = certs;
+  //}
 }
